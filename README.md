@@ -11,7 +11,7 @@
   
     - file UTA_star.py
 
-## In order to run application:
+### In order to run application:
   1. Copy the repository.
   2. Install required libraties: PyQt5, numpy, matplotlib, pandas, openpyxl.
   3. Run file GUI.py.
