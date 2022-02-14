@@ -1,8 +1,8 @@
 # CarSelectionApp
 
-## The student project created by group of 6 students. The main objective was to create an application, which can be useful in choice optimal car, based on specific criteria. The application loads user settings, particularly the method of calculation and returns result ranking in descending order (so the first row signify optimal solution).
+### The student project created by group of 6 students. The main objective was to create an application, which can be useful in choice optimal car, based on specific criteria. The application loads user settings, particularly the method of calculation and returns result ranking in descending order (so the first row signify optimal solution).
 
-## In this project I was depend on:
+### In this project I was depend on:
   1. GUI (Graphical User Interface):
    
     - file GUI.py
