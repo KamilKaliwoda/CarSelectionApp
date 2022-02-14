@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 85, 85);</string>
+  </property>
+  <widget class="QTableWidget" name="table_widget">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>200</y>
+     <width>371</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">selection-background-color: rgb(170, 170, 170);
+selection-color: rgb(0, 0, 0);
+background-color: rgb(170, 170, 170);
+color: rgb(0, 0, 0);
+font: 7pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Marka i model</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Rocznik</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Rocznik</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Rocznik</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string/>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="chart" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>411</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>20</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Ranking dla 3 kryteriów</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="all_criteria_button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>191</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 170);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Ranking dla wszystkich kryteriów</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>381</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="method_choice_label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Wybór metody</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QRadioButton" name="topsis_method">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Fuzzy Topsis</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rsm_method">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Punktów odniesienia</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="uta_method">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>UTA Star</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="max_rows_label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Maksymalna ilość wierszy w rankingu</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="max_rows_spinbox">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 170, 170);
+color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="minimum">
+           <number>5</number>
+          </property>
+          <property name="maximum">
+           <number>99</number>
+          </property>
+          <property name="singleStep">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="first_criterion">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Wybór 1 kryterium</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="first_criterion_combobox">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 170, 170);
+color: rgb(0, 0, 0);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Rocznik</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cena</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Przebieg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Moc silnika</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pojemność silnika</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Spalanie</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Masa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pojemność bagażnika</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="second_criterion">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Wybór 2 kryterium</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="second_criterion_combobox">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 170, 170);
+color: rgb(0, 0, 0);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Rocznik</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cena</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Przebieg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Moc silnika</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pojemność silnika</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Spalanie</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Masa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pojemność bagażnika</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="third_criterion">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Wybór 3 kryterium</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="third_criterion_combobox">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(170, 170, 170);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Rocznik</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cena</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Przebieg</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Moc silnika</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pojemność silnika</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Spalanie</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Masa</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pojemność bagażnika</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="create_ranking">
+   <property name="geometry">
+    <rect>
+     <x>409</x>
+     <y>120</y>
+     <width>371</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 170);
+color: rgb(0, 0, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Wyznacz ranking</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
