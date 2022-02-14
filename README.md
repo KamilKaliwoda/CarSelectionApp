@@ -4,10 +4,10 @@
 
 ## In this project I was depend on:
   1. GUI (Graphical User Interface):
-    - file GUI.py
-    - files all_criteria.py and three_criteria.py (generated from .ui files created by QT Designer).
+    1. file GUI.py
+    2. files all_criteria.py and three_criteria.py (generated from .ui files created by QT Designer).
   2. UTA Star method:
-    - file UTA_star.py
+    1. file UTA_star.py
 
 ## In order to run application:
   1. Copy the repository.
